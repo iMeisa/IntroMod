@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xy"
+  ],
+  "key": {
+    "x": {
+      "item": "intromod:void_essence"
+    },
+    "y": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "intromod:void_apple"
+  }
+}

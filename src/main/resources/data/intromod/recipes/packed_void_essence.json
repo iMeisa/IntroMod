@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+      "xxx",
+      "xxx",
+      "xxx"
+    ],
+  "key": {
+    "x": {
+      "item": "intromod:void_essence"
+    }
+  },
+  "result": {
+    "item": "intromod:packed_void_essence"
+  }
+}

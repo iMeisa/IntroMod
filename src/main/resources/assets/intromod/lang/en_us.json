@@ -1,0 +1,10 @@
+{
+  "item.intromod.argon_crystal": "Argon Crystal",
+  "block.intromod.argon_deposit": "Argon Pegmatite",
+  "block.intromod.packed_void_essence": "Packed Void Essence",
+  "item.intromod.void_apple": "Void Apple",
+  "item.intromod.void_essence": "Void Essence",
+  "item.intromod.void_sword": "Void Sword",
+
+  "itemGroup.tabTenno": "Tenno"
+}

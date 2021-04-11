@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "intromod:argon_crystal"
+  },
+  "result": "intromod:void_essence",
+  "experience": 10.0,
+  "cookingtime": 10
+}
