@@ -14,7 +14,7 @@ public class ModTools {
     public static final RegistryObject<Item> VOID_SWORD =
             Registration.ITEMS.register("void_sword",
                     () -> new SwordItem(ModItemTier.VOID, 0, 10f,
-                            new Item.Properties().tab(IntroMod.TAB_TENNO)));
+                            new Item.Properties().group(IntroMod.TAB_TENNO)));
 
 
 
@@ -23,7 +23,7 @@ public class ModTools {
     public enum ModItemTier implements IItemTier {
 
         VOID(10, 1000000, 10, 100, 5,
-                Ingredient.of(new ItemStack(ModItems.VOID_ESSENCE.get())));
+                Ingredient.fromStacks(new ItemStack(ModItems.VOID_ESSENCE.get())));
 
         private final int harvestLevel;
         private final int maxUses;
@@ -43,32 +43,32 @@ public class ModTools {
         }
 
         @Override
-        public int getUses() {
+        public int getMaxUses() {
             return maxUses;
         }
 
         @Override
-        public float getSpeed() {
+        public float getEfficiency() {
             return efficiency;
         }
 
         @Override
-        public float getAttackDamageBonus() {
+        public float getAttackDamage() {
             return attackDamage;
         }
 
         @Override
-        public int getLevel() {
+        public int getHarvestLevel() {
             return harvestLevel;
         }
 
         @Override
-        public int getEnchantmentValue() {
+        public int getEnchantability() {
             return enchantability;
         }
 
         @Override
-        public Ingredient getRepairIngredient() {
+        public Ingredient getRepairMaterial() {
             return repairMaterial;
         }
     }

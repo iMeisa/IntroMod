@@ -17,7 +17,7 @@ import java.util.List;
 public class VoidApple extends Item {
 
     public VoidApple() {
-        super(new Properties().tab(IntroMod.TAB_TENNO).food(new Food.Builder()
+        super(new Properties().group(IntroMod.TAB_TENNO).food(new Food.Builder()
                 .effect(() -> new EffectInstance(Effects.POISON, 60), 1f)
                 .build()));
     }

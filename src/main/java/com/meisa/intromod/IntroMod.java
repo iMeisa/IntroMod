@@ -33,7 +33,7 @@ public class IntroMod {
 
     public static final ItemGroup TAB_TENNO = new ItemGroup("tabTenno") {
         @Override
-        public ItemStack makeIcon() {
+        public ItemStack createIcon() {
             return new ItemStack(ModItems.ARGON_CRYSTAL.get());
         }
     };

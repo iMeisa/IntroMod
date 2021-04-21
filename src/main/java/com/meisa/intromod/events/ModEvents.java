@@ -13,16 +13,16 @@ public class ModEvents {
     // Invisibility with void essence
     @SubscribeEvent
     public void onVoidedEntity(AttackEntityEvent event) {
-        if (event.getPlayer().getMainHandItem().getItem() == ModItems.VOID_ESSENCE.get()) {
+        if (event.getPlayer().getHeldItemMainhand().getItem() == ModItems.VOID_ESSENCE.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
 
                 PlayerEntity player = event.getPlayer();
 
                 // Remove held item
-                player.getMainHandItem().shrink(1);
+                player.getActiveItemStack().shrink(1);
 
-                target.addEffect(new EffectInstance(Effects.INVISIBILITY, 10));
+                target.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 10));
 
 
 

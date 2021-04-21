@@ -10,13 +10,13 @@ public class KeyboardHelper {
 
     @OnlyIn(Dist.CLIENT)
     public static boolean isHoldingShift() {
-        return InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(),
+        return InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(),
                 GLFW.GLFW_KEY_LEFT_SHIFT);
     }
 
     @OnlyIn(Dist.CLIENT)
     public static boolean isHoldingCtrl() {
-        return InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(),
+        return InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(),
                 GLFW.GLFW_KEY_LEFT_CONTROL);
     }
 }
